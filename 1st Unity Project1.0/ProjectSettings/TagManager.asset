@@ -9,6 +9,9 @@ TagManager:
   - Sasha
   - Death
   - Ground
+  - fbomb
+  - fhealt
+  - fcoin
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
