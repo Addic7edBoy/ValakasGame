@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 571052052}
   - component: {fileID: 571052051}
   - component: {fileID: 571052050}
+  - component: {fileID: 571052053}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -310,6 +311,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &571052053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571052049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114e6a98bbad160469633d8b07507c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  ispuse: 0
+  guipuse: 0
 --- !u!1 &726777419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,8 +1293,9 @@ GameObject:
   - component: {fileID: 1887106173}
   - component: {fileID: 1887106174}
   - component: {fileID: 1887106175}
+  - component: {fileID: 1887106176}
   m_Layer: 0
-  m_Name: SNinja_nosword_run 10
+  m_Name: VALAKAS
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1301,14 +1318,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 2.56}
+    oldSize: {x: 7.25, y: 10.96}
     newSize: {x: 5.12, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.75}
+  m_Size: {x: 3.86, y: 10.15}
   m_EdgeRadius: 0
 --- !u!212 &1887106171
 SpriteRenderer:
@@ -1348,7 +1365,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: bb55c35ef06ae0f44afa74154a63bbfe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3560306874b4aff4fa0fd0774b11f8e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1367,8 +1384,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887106169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.88, y: -3.22, z: 0}
-  m_LocalScale: {x: 0.5478178, y: 0.5384912, z: 1.095}
+  m_LocalPosition: {x: -8.92, y: -3.53, z: 0}
+  m_LocalScale: {x: 0.0989359, y: 0.09725151, z: 0.197757}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1405,7 +1422,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1887106175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,6 +1436,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  IsGround: 0
+--- !u!95 &1887106176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887106169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17162d1b19815e946883735044771349, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2047193244
 GameObject:
   m_ObjectHideFlags: 0

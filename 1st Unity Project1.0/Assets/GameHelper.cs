@@ -12,6 +12,8 @@ public class GameHelper : MonoBehaviour
 
     private Text scoreText;
 
+    public Text sashaText;
+
     public GameObject pipes;
 
     public Button restartButton;
@@ -19,6 +21,8 @@ public class GameHelper : MonoBehaviour
     [HideInInspector]
 
     public int score;
+
+    public int sasha;
 
     void Awake()
 
@@ -40,7 +44,9 @@ public class GameHelper : MonoBehaviour
 
     {
 
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Sveta: " + score;
+        sashaText.text = "Sasha: " + sasha;
+
 
     }
 
